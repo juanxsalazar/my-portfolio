@@ -1,12 +1,75 @@
+
+
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1 sans-serif;  
 }
 
-html {
-  height: 100%;
-}
 
 body {
   margin: 0;
+  padding: 0;
   min-height: 100%;
+  background: url(images/views.png) no-repeat center fixed; 
+  background-size: 100% 100%;
+  font-family: roboto; 
+}
+
+section {display: flex; 
+  justify-content: space-evenly}
+/* Speech bubble section */
+section div {
+  width: 400px;
+  height: 100px;
+  border-radius: 1em;
+  box-sizing: border-box;
+  margin: 2.5rem;
+  margin-left: -20rem;
+  background: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+section div::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 1.375em solid transparent;
+  border-top-color: rgba(255, 255, 255, 0.5);
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -0.687em;
+	margin-bottom: -1.375em;
+}
+
+section div h1{margin-left: 1rem;}
+
+section div p {margin-left: 1rem;}
+
+section img {
+  padding: 4rem;
+border-radius: 25%;}
+
+.shaded {  background: rgba(0, 0, 0, .7);
+}
+
+article {background-color: white}
+
+.navybg {background-color: #031019;}
+
+.rb {color: white;
+background-color: #0081D5;
+width: 6.5rem;
+padding: .45rem;
+border-radius: 1rem;
+margin-top: 3rem;}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+footer img {
+  border-radius: 50%;
+margin: .75rem;
 }
